@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>PACKOUT</title>
+  <style>
+    p {
+      text-align: center;
+      background-color: green;
+      color: black;
+      font-size: medium;
+    }
+  </style>
+  <style>
+    .container {
+      position: relative;
+      width: 200px; /* Adjust width as needed */
+      height: 200px; /* Adjust height as needed */
+    }
+
+    .box1 {
+      position: relative;
+      left: 100px;
+      top: 50px;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+    }
+
+    .box2 {
+      position: absolute;
+      left: 25px; /* Initial position */
+      top: 50px;
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      transition: left 3s ease;
+    }
+
+    .box3 {
+      position: absolute;
+      left: 50px; /* Positioned to the right of box2 */
+      bottom: -25px; /* Initial position */
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      transition: bottom 3s ease;
+    }
+
+    .box4 {
+      position: absolute;
+      right: -100px; /* Positioned to the right of box3 */
+      bottom: -250px; /* Initial position */
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      transition: left 3s ease, bottom 3s ease;
+    }
+
+    .container button {
+      position: relative;
+      bottom: 25px;
+      left: 25%;
+      transform: translateX(-25%);
+    }
+
+    .animate-boxes .box2 {
+      left: 50px; /* Final position */
+    }
+
+    .animate-boxes .box3 {
+      bottom: 50px; /* Final position */
+    }
+
+    .animate-boxes .box4 {
+      position: absolute;
+      left: 100px; /* Final position */
+      bottom: 50px; /* Final position */
+    }
+  </style>
+  <style>
+    h2 {
+      text-align: center;
+      text-family: arial;
+      text-font: bold;
+      color: black;
+      background-color: white;
+      border: solid black 2px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: black; background-color: white; text-align: center;">ANIMATION</h1>
+  <h2>
+    <a href="https://cad.onshape.com/documents/62596507e064fbb2ad9d811c/w/3d2ce205d469002402e7e59f/e/b814212f253da4115084fc61">------Redirect To OnShape Part Studio For Immediate Customization Here------</a>
+  </h2>
+  <h2 style="color: black; background-color: white; text-align: center;">Blue Box = "Section.1"</h2>
+  <a href="https://cad.onshape.com/documents/62596507e064fbb2ad9d811c/w/3d2ce205d469002402e7e59f/e/151f1c3e769b95da37ccd8cf" style="color: black; display: block; text-align: center; padding: 10px; background-color: lightblue;">Visit OnShape Assembly For Section.1</a>
+  <h2 style="color: black; background-color: white; text-align: center;">Green Box = "Section.2"</h2>
+  <a href="https://cad.onshape.com/documents/62596507e064fbb2ad9d811c/w/3d2ce205d469002402e7e59f/e/c964403cba66aca06fa7d01e" style="color: black; display: block; text-align: center; padding: 10px; background-color: lightgreen;">Visit OnShape Assembly For Section.2</a>
+  <h2 style="color: black; background-color: white; text-align: center;">Black Box = "Section.3"</h2>
+  <a href="https://cad.onshape.com/documents/62596507e064fbb2ad9d811c/w/3d2ce205d469002402e7e59f/e/c73a71055829044bc261baa7" style="color: black; display: block; text-align: center; padding: 10px; background-color: lightgrey;">Visit OnShape Assembly For Section.3</a>
+  <h2 style="color: black; background-color: white; text-align: center;">Red Box = "Section.4"</h2>
+  <a href="https://cad.onshape.com/documents/62596507e064fbb2ad9d811c/w/3d2ce205d469002402e7e59f/e/78b8cd1568fa8c17c20c5ce9" style="color: black; display: block; text-align: center; padding: 10px; background-color: pink;">Visit OnShape Assembly For Section.4</a>
+   <h3 style="font-size:medium; font-family:arial; font-sytle:bold; text-align:center; color:black; background-color:white" >Visual Representation Of Assembly Direction Starting From Top-Right Hand Corner Seen As (Section.1"Blue") And Ending With (Section.4"Red");</h3>
+  <style>
+  p {
+    text-align: center;
+    background-color: green;
+    color: black;
+    font-size: medium;
+    font-family: arial;
+    font-style: bold;
+  }
+
+  #element {
+    flex: position;
+    top-right: 75px, 15px;
+    background-color: black;
+  }
+  </style>
+    <script>
+    function animateBoxes() {
+  const container = document.querySelector('.container');
+  container.classList.add('animate-boxes');
+}
+  </script>
+<div class="container" style="text-align:right">
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+  <button onclick="animateBoxes()" align="center">Start Animation</button>
+</div> 
+</body>
+</html>
